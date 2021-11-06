@@ -10,8 +10,9 @@ def test_calculator_result():
 
 def test_zero_division():
     """Testing the division function of the calculator"""
+    calc = Calculator()
     with pytest.raises(ZeroDivisionError):
-        1 / 0
+        calc.division_numbers(1,0)
 def test_calculator_add():
     """Testing the Add function of the calculator"""
     #AAA-Arrange by instantiating the calc class
